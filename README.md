@@ -1,4 +1,5 @@
 # TestProtocoloRayita
+
 Proyecto que prueba la correcta implementación del protocolo definido en el equipo para el desarrollo del juego rayita taller 2 de informática 1 en la especialización de ing. software de la UD
 
 ##Potocolo
@@ -18,6 +19,7 @@ Donde
 ##Lista de comandos:
 
 ###INI
+
 Establece la coneccion con el servidor. Este comando se debe enviar cuando se solicita conexion con el servidor
 	
 	Respuesta:
@@ -28,6 +30,7 @@ Establece la coneccion con el servidor. Este comando se debe enviar cuando se so
 * CC : numero de columnas del juego un valor que va de 10 a 50
 
 ###SNM
+
 Alias o nombre del jugador
 
 	Param:
@@ -37,6 +40,7 @@ Alias o nombre del jugador
 	OK,Nombre del contricante
 	
 ###TUR
+
 Consulta el turno en el que se encuentra segun el servidor
 
 	Respuesta:
@@ -45,6 +49,7 @@ Consulta el turno en el que se encuentra segun el servidor
 * X : coresponde al turno y tiene de valores 1 (el servidor) y 2 (el cliente)
 
 ###JUG
+
 Notifica al servidor/cliente que hizó una jugada y cual fue la jugada.
 
 	Param:
