@@ -22,7 +22,7 @@ Donde
 * **CMD** : comando que puede ser INI, SNM, TUR, JUG.
 * **PARAM** : parametro variable que acompaña al comando
 * **RS** : parametro de estado de la respuesta puede ser OK o NK (No OK) segun el caso.
-* **Presponse** : parametros en la respuesta que varian segun le comando.
+* **RESPONSE** : parametros en la respuesta que varian segun le comando.
 
 ## Lista de comandos:
 
