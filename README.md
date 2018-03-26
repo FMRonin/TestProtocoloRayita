@@ -3,11 +3,17 @@
 Proyecto que prueba la correcta implementación del protocolo definido en el equipo para el desarrollo del juego rayita taller 2 de informática 1 en la especialización de ing. software de la UD
 
 ## Potocolo
-Formato de respuesta:
+Formato de mensaje:
 
 ~~~
 QDTAAAAMMDDhhmmssCMDPARAM
 ~~~
+
+Formato de repuesta:
+~~~
+RS,RESPONSE
+~~~
+
 Donde
 
 * **QDT** : id que identifica la cabecera.
@@ -15,10 +21,12 @@ Donde
 * **hhmmss** : hora de la conección hh (hora), mm (minutos), ss (segundos).
 * **CMD** : comando que puede ser INI, SNM, TUR, JUG.
 * **PARAM** : parametro variable que acompaña al comando
+* **RS** : parametro de estado de la respuesta puede ser OK o NK (No OK) segun el caso.
+* **Presponse** : parametros en la respuesta que varian segun le comando.
 
 ## Lista de comandos:
 
-### INI
+### 1. INI
 
 Establece la coneccion con el servidor. Este comando se debe enviar cuando se solicita conexion con el servidor
 	
@@ -29,7 +37,7 @@ Establece la coneccion con el servidor. Este comando se debe enviar cuando se so
 * FF : numero de filas del juego es un valor que va de 10 a 50
 * CC : numero de columnas del juego un valor que va de 10 a 50
 
-### SNM
+### 2. SNM
 
 Alias o nombre del jugador
 
@@ -39,7 +47,7 @@ Alias o nombre del jugador
 	Respuesta:
 	OK,Nombre del contricante
 	
-### TUR
+### 3. TUR
 
 Consulta el turno en el que se encuentra segun el servidor
 
@@ -48,7 +56,7 @@ Consulta el turno en el que se encuentra segun el servidor
 	
 * X : coresponde al turno y tiene de valores 1 (el servidor) y 2 (el cliente)
 
-### JUG
+### 4. JUG
 
 Notifica al servidor/cliente que hizó una jugada y cual fue la jugada.
 
