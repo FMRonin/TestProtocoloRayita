@@ -74,5 +74,5 @@ _
 	NK,E
 		
 * T : Estado de la jugada: si aun no se cierra una celda (0), si cerro una celda el servidor, si cerro una celda el cliente.
-* F : responde 0 si el juego sigue, 1 se alguien gano.
+* F : responde 0 si el juego sigue, 1 se alguien ganó.
 * E : reponde si no es posible realizar la jugada: ya estaba hecha (0), no es turno (1), no existe la jugada (0).
