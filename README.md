@@ -2,7 +2,7 @@
 
 Proyecto que prueba la correcta implementación del protocolo definido en el equipo para el desarrollo del juego rayita taller 2 de informática 1 en la especialización de ing. software de la UD
 
-##Potocolo
+## Potocolo
 Formato de respuesta:
 
 ~~~
@@ -16,9 +16,9 @@ Donde
 * **CMD** : comando que puede ser INI, SNM, TUR, JUG.
 * **PARAM** : parametro variable que acompaña al comando
 
-##Lista de comandos:
+## Lista de comandos:
 
-###INI
+### INI
 
 Establece la coneccion con el servidor. Este comando se debe enviar cuando se solicita conexion con el servidor
 	
@@ -29,7 +29,7 @@ Establece la coneccion con el servidor. Este comando se debe enviar cuando se so
 * FF : numero de filas del juego es un valor que va de 10 a 50
 * CC : numero de columnas del juego un valor que va de 10 a 50
 
-###SNM
+### SNM
 
 Alias o nombre del jugador
 
@@ -39,7 +39,7 @@ Alias o nombre del jugador
 	Respuesta:
 	OK,Nombre del contricante
 	
-###TUR
+### TUR
 
 Consulta el turno en el que se encuentra segun el servidor
 
@@ -48,7 +48,7 @@ Consulta el turno en el que se encuentra segun el servidor
 	
 * X : coresponde al turno y tiene de valores 1 (el servidor) y 2 (el cliente)
 
-###JUG
+### JUG
 
 Notifica al servidor/cliente que hizó una jugada y cual fue la jugada.
 
@@ -67,5 +67,4 @@ _
 		
 * T : Estado de la jugada: si aun no se cierra una celda (0), si cerro una celda el servidor, si cerro una celda el cliente.
 * F : responde 0 si el juego sigue, 1 se alguien gano.
-
 * E : reponde si no es posible realizar la jugada: ya estaba hecha (0), no es turno (1), no existe la jugada (0).
