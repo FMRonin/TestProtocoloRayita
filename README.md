@@ -16,6 +16,7 @@ Donde
 * **PARAM** : parametro variable que acompaña al comando
 
 ##Lista de comandos:
+
 ###INI
 Establece la coneccion con el servidor. Este comando se debe enviar cuando se solicita conexion con el servidor
 	
