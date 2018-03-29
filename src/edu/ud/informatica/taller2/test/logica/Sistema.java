@@ -87,7 +87,7 @@ class Sistema implements Runnable{
         }else if (mensaje.substring(0,2).equals("OK")
                 || mensaje.substring(0,2).equals("NK")){
             comandoValido = true;
-            param = mensaje.substring(2);
+            param = mensaje.substring(3);
         }else {
             comandoValido = false;
         }
