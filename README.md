@@ -49,7 +49,7 @@ Alias o nombre del jugador
 	
 ### 3. TUR
 
-Consulta el turno en el que se encuentra segun el servidor
+Sede el turno en el que se encuentra segun el servidor
 
 	Respuesta:
 	OK,X
